@@ -22,4 +22,15 @@ public class Horse {
         possiblePosition.add ( new Position ( 2,-1 ) );
     }
 
+
+    public Position getCurrentPosition() {
+        return currentPosition;
+    }
+
+    public ArrayList<Position> getPossiblePosition() {
+        return possiblePosition;
+    }
+
+
+
 }
