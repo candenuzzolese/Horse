@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 public class Horse {
 
-    private Position currentPosition;
-    private ArrayList<Position> possiblePosition = new ArrayList<> (  );
+    private Position currentPosition; //posicion actual
+    private ArrayList<Position> possiblePosition = new ArrayList<> (  ); // posibles movimientos aceptados
 
     public Horse(Position currentPosition) {
         this.currentPosition = currentPosition;
     }
 
+    //posibles movimientos lleno
     void availableMovements(){
         possiblePosition.add ( new Position ( 1,-1 ) );
         possiblePosition.add ( new Position ( -1,1 ) );
@@ -32,5 +33,11 @@ public class Horse {
     }
 
 
+    public void setCurrentPosition(Position currentPosition) {
+        this.currentPosition = currentPosition;
+    }
 
+    public void setPossiblePosition(ArrayList<Position> possiblePosition) {
+        this.possiblePosition = possiblePosition;
+    }
 }
