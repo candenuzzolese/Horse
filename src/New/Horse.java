@@ -12,6 +12,7 @@ public class Horse {
     }
 
     //posibles movimientos lleno
+
     void availableMovements(){
         possiblePosition.add ( new Position ( 1,-1 ) );
         possiblePosition.add ( new Position ( -1,1 ) );
