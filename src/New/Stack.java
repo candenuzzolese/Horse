@@ -2,15 +2,17 @@ package New;
 
 public class Stack<T> {
 
+
+    private Object[] stack;
     private int length;
     private int capacity;
-    private Object[] pile;
+
 
     public Stack(int capacity) {
 
         length = -1;
         this.capacity = capacity;
-        pile = new Object[capacity];
+        stack = new Object[capacity];
     }
 
     public void pop(){
@@ -18,24 +20,24 @@ public class Stack<T> {
 
     }
     public void push(T element){
-        if (length == pile.length-1){
+        if (length == stack.length-1){
             extend();
         }
         length++;
-        pile[length] = element;
+        stack[length] = element;
     }
 
     private void extend() {
         Object[] pileAux = new Object[2*capacity];
         for (int i = 0; i < capacity; i++) {
-            pileAux[i] = pile[i];
+            pileAux[i] = stack[i];
         }
-        pile = pileAux;
+        stack = pileAux;
     }
 
     public T peek(){
         if (!isEmpty()){
-            return (T) pile[length];
+            return (T) stack[length];
         }
         return null;
     }
