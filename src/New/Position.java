@@ -22,4 +22,7 @@ public class Position{
         public void print() {
             System.out.print(letters[letter] + (number + 1));
         }
+
+        void checkPosition(){ }
+
 }

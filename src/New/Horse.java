@@ -12,10 +12,14 @@ public class Horse {
     }
 
     void availableMovements(){
-
-
-        int1
-
-
+        possiblePosition.add ( new Position ( 1,-1 ) );
+        possiblePosition.add ( new Position ( -1,1 ) );
+        possiblePosition.add ( new Position ( -1,-1 ) );
+        possiblePosition.add ( new Position ( 1,1 ) );
+        possiblePosition.add ( new Position ( 1,1 ) );
+        possiblePosition.add ( new Position ( 2,1 ) );
+        possiblePosition.add ( new Position ( -2,1 ) );
+        possiblePosition.add ( new Position ( 2,-1 ) );
     }
+
 }
