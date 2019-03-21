@@ -9,14 +9,6 @@ public class Chess {
     Position board[][];
     Stack<Position> movements = new Stack ();
 
-/*
- for (int i = 0; i < stacks.length; i++) {
-            stacks[i] = new StaticStack<>();
-        }
-        currentStack = 0;
-        previousPositions = new ArrayList<>();
-    }
- */
     public Chess(Horse horse) {
         this.horse = horse;
 
@@ -41,7 +33,20 @@ public class Chess {
         }
 
 
+        }
+        /*
+          while (!stacks[currentStack - 1].isEmpty()) {
+            printer();
+            stacks[currentStack - 1].pop();
+            if (stacks[currentStack - 1].isEmpty()) break;
+            currentPosition = stacks[currentStack - 1].peek();
+            movements();
+            System.out.println();
+        }
+         */
+
+
 
     }
-}
+
 
