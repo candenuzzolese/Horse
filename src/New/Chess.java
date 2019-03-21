@@ -17,7 +17,7 @@ public class Chess {
         previousPositions = new ArrayList<>();
     }
  */
-    public Chess(int n, Horse horse) {
+    public Chess(Horse horse) {
         this.horse = horse;
 
         board = new Position[8][8];

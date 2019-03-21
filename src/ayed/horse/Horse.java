@@ -1,7 +1,5 @@
 package ayed.horse;
 
-import ayed.stack.StaticStack;
-
 import java.util.ArrayList;
 
 public class Horse {
